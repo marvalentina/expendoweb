@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expendo Web</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header id="navbar">
+        <img class="logo" src="./images/logo_expendo.png" alt="logo">
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#producto" onclick="toggleMenu();">Aplicaciones</a></li>
+            <li><a href="#cardsV" onclick="toggleMenu();">Ventajas</a></li>
+        </ul>
+    </header>
+    <div class="contactB">
+        <div class="contenido">
+            <div class="ImgBox">
+                <img src="./images/phone-call.png">
+            </div>
+            <p>+52(667)218-53-88 <b>|</b> +58(667)218-53-87</p>
+        </div>
+    </div>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h1 id="t">La mejor solución para tu empresa</h1>
+            <a class="btn" href="#producto" onclick="toggleMenu();">Ver Productos</a>
+        </div>
+    </section>
+    <section class="ventajas" id="ventajas">
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./images/006-data.svg">
+                </div>
+                <div class="text">
+                    <h3>Expendo - POS</h3>
+                    <p>Administra y lleva el control de las ventas de tu negocio con nuestro punto de venta.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./images/007-diagram.svg">
+                </div>
+                <div class="text">
+                    <h3>Expendo - Factory</h3>
+                    <p>Controla los procesos de tu fabrica con nuestro software especializado.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="imgBx">
+                    <img src="./images/005-technical-support.svg">
+                </div>
+                <div class="text">
+                    <h3>Expendo - Development</h3>
+                    <p>Desarrollo de Software para la Industria y Sector Empresarial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cards">
+        <section class="cardsV" id="cardsV">
+            <div class="title">
+                <h2 class="titleText">Por qué elegirnos?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia.</p>
+            </div>
+                <div class="content">
+                    <div class=box>
+                        <div class="imgBx">
+                            <img src="./images/003-support.svg" >
+                        </div>
+                        <div class="text">
+                            <p>Soporte Técnico 365 días al año</p>
+                        </div>
+                    </div>
+                    <div class=box>
+                        <div class="imgBx">
+                            <img src="./images/factory.png" >
+                        </div>
+                        <div class="text">
+                            <p>Software enfocado 100% a la Automatización</p>
+                        </div>
+                    </div>
+                    <div class=box>
+                        <div class="imgBx">
+                            <img src="./images/002-customer-service.svg" >
+                        </div>
+                        <div class="text">
+                            <p>Aplicaciones intuitivas y fáciles de utilizar</p>
+                        </div>
+                    </div>
+                    <div class=box>
+                        <div class="imgBx">
+                            <img src="./images/001-help.svg" >
+                        </div>
+                        <div class="text">
+                            <p>Retorno de su inversión a largo plazo</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </section>
+    <section class="productos" id="producto">
+        <div class="row">
+            <div class="colP">
+                <h2 class="titulo">Expendo - <span>POS</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.<br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi<br></br></p>
+            </div>
+            <div class="colI">
+                <div class="imgBx">
+                    <img src="./images/3588982.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="productos" id="productoR">
+        <div class="row">
+            <div class="colIi">
+                <div class="imgBx">
+                    <img src="./images/3343892.jpg" alt="">
+                </div>
+            </div>
+            <div class="colPi">
+                <h2 class="titulo">Expendo - <span>Factory</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.<br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi<br></br></p>
+            </div>
+
+        </div>
+    </section>
+    <section class="productos" id="productoHidden">
+        <div class="row">
+            <div class="colP">
+                <h2 class="titulo">Expendo - <span>Factory</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.<br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi<br></br></p>
+            </div>
+            <div class="colI">
+                <div class="imgBx">
+                    <img src="./images/3343892.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="productos">
+        <div class="row">
+            <div class="colP">
+                <h2 class="titulo">Expendo - <span>Development</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.<br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi.Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
+                molestiae quas vel sint commodi<br></br></p>
+            </div>
+            <div class="colI">
+                <div class="imgBx">
+                    <img src="./images/3156627.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titlec">Contáctanos!</h2>
+        </div>
+        <div class="contactForm">
+            <h3>Envianos Un Mensaje</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="Mensaje"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </section>
+    
+    <div class="copyright">
+        <p>Copyright 2021 Expendo. All Right Reserved</p>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+        
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+    
+</body>
+</html>
+
+
+
+
+

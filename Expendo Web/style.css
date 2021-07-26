@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#productoHidden{
+    display: none;
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.7em 9em;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-color: #1b2e35e1;
+    margin-bottom: 0;
+}
+header.sticky{
+    background-color: #1b2e35e1;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+.logo{
+    width: 12em;
+}
+header .navigation li a:hover{
+    font-weight: 700;}
+
+.navigation{
+    position: relative;
+    display: flex;
+    padding-right: 20px;
+}
+.navigation li{
+    list-style: none;
+}
+.navigation a{
+    text-decoration: none;
+    padding-left: 1.4em;
+    padding-top: 2em;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+.contactB{
+    width: 360px;
+    height: 40px;
+    background: #f9a600;
+    z-index: 13000000;
+    justify-content: center;
+    position: fixed;
+    display:flex;
+    right: 20px;
+    bottom: 94.4%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: -70px;
+    cursor: pointer;
+}
+.contactB .contenido{
+    text-align: center;
+    flex-direction: row;
+    display:inline-flex;
+    color: black;
+    padding-top: 10px;
+}
+.contactB .ImgBox{
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+.contactB .ImgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+.contactB .contenido p{
+    font-size: 0.9em;
+    width: 500;
+    padding-left: 20px;
+}
+.contactB .contenido b{
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.contactB h3{
+    font-size: 1em;
+    font-weight: 500;
+    padding-top:  4px;
+    padding-bottom: 6px;
+}
+.banner .content h1{
+    color: rgb(8, 8, 8);;
+    font-size: 3.8em;
+    font-weight:800;
+    margin-bottom: 10px;
+}
+.banner .content p{
+    font-weight: 300;
+    color: rgb(8, 8, 8);
+}
+.banner {
+    margin-bottom: -300px;
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/banner3.jpg);
+    background-position-x: -780px;
+    background-position-y: 20px;
+    background-size: cover;
+}
+
+.banner .content {
+    max-width: 800px;
+    text-align:center;
+    margin-top: -100px;
+}
+.btn{
+    color: rgb(252, 250, 250);
+    text-decoration: none;
+    font-size: 0.9em;
+    background-color: rgb(119, 27, 9);
+    padding: 1em 2em;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.btn:hover{
+    letter-spacing: 4px;
+}
+.col{
+    text-align:center;
+    background-color: transparent;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    width: 170px;
+    height: 200px;
+    margin-top: 30px;
+}
+.colP{
+    position: relative;
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 5%;
+
+}
+.contact .titlec{
+    font-size:2.2em;
+    font-weight: 600;
+    padding-bottom: 0.6em;
+
+}
+.colI{
+    position: relative;
+    width: 100%;
+    margin-right: 10%;
+}
+.colPi{
+    position: relative;
+    width: 100%;
+    margin-right: 10%;
+    margin-left: 5%;
+
+}
+.colIi{
+    position: relative;
+    width: 100%;
+    margin-left: 10%;
+}
+.imgBx{
+    width: 100%;
+    position: relative;
+    height: 350px;
+}
+.productos .imgBx  img{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top:0;
+   left:0;
+   object-fit: cover;
+}
+.productos{
+    padding-top: 7%;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.titulo{
+    color: #111;
+    font-size: 2em;
+    font-weight: 500;
+    padding-bottom: 0.5em;   
+}
+
+span{
+    color: #A02C2C;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+.colP h2{
+    align-items: center;
+}
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cardsV .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.cardsV{
+    padding: 4em 0;
+}
+
+.cardsV .content .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid rgb(250, 250, 250);
+    border-radius: 1em;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    
+}
+
+.cards .title, .cards span{
+    color: white;
+}
+
+
+.cardsV .content .box .imgBx{
+    width: 70px;
+    height: 70px;
+    position: relative;
+
+}
+.cardsV .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+    padding-bottom: 0em;
+}
+.cardsV .content .box .text{
+    padding: 1.7em 0.2em 2em 0.2em;  
+}
+.cards .cardsV .title .titleText{
+    font-size:2.2em;
+    font-weight: 600;
+    padding-bottom: 0.6em;
+}
+.cardsV .content .box .text p{
+    font-weight: 400;
+    font-size: 1em;
+    text-align:center;
+
+}
+
+.cards .title p{
+    text-align:center;
+}
+
+.cards{
+    width: 100%;
+    min-height: 60vh;
+    background:linear-gradient(#C93E53, #A02C2C) ;
+    color: black;
+}
+
+.icono{
+    max-width: 60px;
+    max-height: 60px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.icono img{
+ width: 100%;
+ position: absolute;
+}
+.ventajas{
+    background-color: transparent;
+    margin-top: 0px;
+}
+.ventajas .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-bottom: 1em; 
+}
+.ventajas .content .box {
+    width: 220px;
+    margin: 20px;
+    padding: 2.5em;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow:0 5px 20px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
+}
+.ventajas .content .box .imgBx{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.ventajas .content .box .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover ;
+}
+.ventajas .content .box .text{
+    text-align: center;
+    z-index: 12999;
+}
+.ventajas h3{
+    font-weight: 700;
+    padding-bottom: 0.5em;
+    font-size: 1em;
+}
+.ventajas .content .box .text p{
+    color: #666;
+    font-style: italic;
+    font-size: 0.9em;
+}
+.contact{
+    background:url(./images/3873169.jpg) ;
+    background-position-x:40em;
+    background-position-y: 3em;
+    background-size: 50%;
+    padding-bottom: 5em;
+    padding-top: 5em;
+    background-repeat: no-repeat;
+}
+.contactForm{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+.contactForm h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background-color: #F9A500;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration:none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+.copyright{
+    padding: 32px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align:center;
+    background:#1b2e35ef;
+}
+.copyright p{
+    color: white;
+}
+
+@media(max-width:1200px){
+    .banner .content h1 {
+        padding: 0 2em;
+    }
+    .btn{
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 991px)
+{
+    #productoR{
+        display: none;
+    }
+    #productoHidden{
+        display: flex;
+    }
+
+    header, header.sticky{
+        padding: 10px 30px;
+    }
+    header .navigation{
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(50% - 68px);
+        position: fixed;
+        top: 72px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #1B2E35;
+    }
+    header .navigation li{
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    header .navigation li a{
+        color: white;
+        font-size: 1.2em;
+        font-weight: 400;
+        
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(./images/4453896.png);
+        filter: invert(100%);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .menuToggle.active{
+        filter: invert(100%);
+        background: url(./images/close.png);
+        background-size: 17px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .contactB {
+        width: 100%;
+        right: 0;
+        border-radius: 0;
+    }
+    .contactB .contenido b {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
+    .contactB .contenido p {
+        padding-left: 1.5em;
+    }
+    .banner{
+        background-position-x: -1000px;
+        background-position-y: 0;
+    }
+
+    .banner .content h1{
+        font-size: 3em;
+        color: rgb(8, 8, 8);
+    }
+    .banner .content p {
+        font-size: 0.95em;
+        margin-top: 2em;
+        padding: 0 2em;
+        color: rgb(8, 8, 8);;
+    }
+    .banner .content .btn{
+        font-size: 0.79em;
+        margin-bottom: 130px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .row .colP{
+        position: relative;
+        width: 100%;
+        padding-right: 10%;
+        padding-left: 10%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .colP h2 {
+        text-align: center;
+        padding-bottom: 0.7em;
+    }
+    .row .colI .imgBx{
+        height: 300px;
+    }
+    .row .colI{
+        position: relative;
+        width: 100%;
+    }
+    .productos {
+        padding-top: 3.5%;
+        padding-bottom: 3.5%;
+    }
+    .contactForm{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .contact{
+        background-position-x: 0;
+        background-position-y: 0;
+        background-size: 100%;
+    }
+}
+@media(max-width:618px){
+    .banner .content h1 {
+        padding: 0 0.8em;
+        font-size: 2.7em;
+        margin-top: -60px;
+    }
+    .contact{
+        background: none;
+    }
+    .contactForm{
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 10px;
+    }
+}
+@media(max-width:556px){
+    .banner{
+        margin-bottom: -200px;
+        margin-top: -80px;
+    }
+
+    .banner .content .btn {
+        font-size: 0.70em;
+        margin-bottom: 0px;
+    }
+    .cards .cardsV .title .titleText {
+        font-size: 1.5em;
+        font-weight: 700;
+        padding-bottom: 0.6em;
+    }
+    .cards .title p{
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        font-size: 0.95em;
+    }
+    .cardsV {
+        padding: 2em 0;
+    }
+    .cardsV .content {
+        margin-top: 10px;
+    }
+    .cardsV .content .box {
+        width: 240px;
+        border: 5px solid rgb(250, 250, 250);
+        height: 150px;
+        margin: 15px;
+    }
+    .cardsV .content .box .text {
+        padding: 1em 0.4em 1em 0.4em;
+        font-size: 0.9em;
+    }
+    .cardsV .content .box .imgBx {
+        width: 60px;
+        height: 60px;
+    }
+    .ventajas{
+        margin-top: -350px;
+    }
+    .colIi {
+        margin-left: 0;
+    }
+}
+@media(max-width:300px){
+    .contactB {
+        height: 40px;
+        bottom: 96%;
+        padding: 3px;
+    }
+    .contactB .contenido {
+        padding-bottom: 7px;
+        padding-top: 9px;
+    }
+    .contactB .contenido p {
+        padding-left: 6px;
+        font-size: 0.7em;
+    }
+    .contactB .contenido b{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .contactB .ImgBox {
+        width: 15px;
+        height: 15px;
+    }
+    .banner .content {
+        margin-top: -5px;
+    }
+    .banner .content h1 {
+        padding: 0 0.5em;
+        font-size: 2.2em;
+    }
+    .ventajas {
+        margin-top: -250px;
+    }
+    span {
+        font-size: 0.9em;
+    }
+    .titulo {
+        font-size: 1.5em;
+    }
+    .productos {
+        padding-top: 10%;
+    }
+    .productos .row .colP p{
+        font-size: 0.7em;
+    }
+    .copyright p{
+        font-size: 0.9em;
+    }
+    .contact{
+        padding-bottom: 1em;
+    }
+    .logo {
+        width: 7em;
+    }
+
+}
+@media(max-height:660px){
+    .banner .content {
+        margin-top: 70px;
+    }
+    .banner {
+        margin-bottom: -100px;
+        background-position-x: -680px;
+    }
+}
